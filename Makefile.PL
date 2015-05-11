@@ -10,12 +10,13 @@ WriteMakefile(
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => 0,
+        'ExtUtils::MakeMaker' => 0
     },
     BUILD_REQUIRES => {
-        'Test::More' => 0,
+        'Test::More' => '0.98'
     },
     PREREQ_PM => {
+        'AnyEvent' => '7.09'
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'AnyEvent-NSQ*' },
